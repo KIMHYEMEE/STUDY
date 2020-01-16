@@ -1,0 +1,50 @@
+본 자료는 패턴 인식과 머신 러닝(Pattern recognition and machine learning, 크리스토퍼 비숍)을 바탕으로 작성되었음
+
+CH01-2 확률론
+* 불확실성: 패턴 인식 분야에서 중요한 개념 중 하나
+-> 확률론은 불확실성을 계량화하고 조작하기 위한 이론적 토대로,
+   주어진 정보가 불확실하거나 완전하지 않은 제약 조건하에서 최적의 예측을 시행할 수 있게함
+
+* 합의 법칙(sum rule, 주변확률 marginal probability)
+	p(x)=p(x,y1)+p(x,y2)+p(x,y3)+...
+	'x의 확률'
+	- 결합 확률(joint probability)
+		p(x,y) = n/N
+		'x와 y의 확률'
+		
+* 곱의 법칙(product rule)
+	p(x,y) = n/N = n/c * c/N
+		   = p(y|x)p(x)
+	- 조건부 확률(conditional probability)
+	: x인 사례 중 y의 비율
+		p(y|x) = n/c
+		'x가 주어졌을 경우 y의 확률'
+		
+*베이즈 정리(Bayes' theorem)
+	p(y|x) = [p(x|y)p(y)] / p(x)
+	
+= 데이터로부터 원 분포를 모델링하는 것이 통계적 패턴 인식의 핵심 중 하나
+
+*사전 확률(prior probability)
+	p(B)-어떤 박스를 선택하였는가?
+:어떤 과일이 선택되었는지 확인하기 '전'의 확률
+*사후 확률(posterior probability)
+	p(B|F) - 선택된 과일이 오렌지라는 것을 알고, 베이지안 정리를 통해 추정
+:어떤 과일이 선택되었는지 확인한 '후'의 확률
+	- 사건F: 과일 선택 / 사건B: 박스 선택 -> 박스 선택 후 과일 선택이 이루어짐
+	
+*독립(independency)
+	p(x,y)=p(x)p(y)
+	-> p(y|x)=p(y)
+	
+	
+
+$1.2.1 확률 밀도
+*확률 밀도(probability density)
+: x가 (a,b) 구간 사이의 값을 가질 확률
+	- 확률은 양의 값을 갖고, x는 실수축 상 위치
+? 야코비안 인자로 인해 비선형 변수 변환 시 일반적인 단순 함수와는 다른 방식으로 변화하게 됨
+(추가)
+
+* 확률 질량 함수(probability mass function)
+: x가 이산 변수일 경우 p(x)
