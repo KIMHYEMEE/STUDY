@@ -1,0 +1,84 @@
+#Genetic algorithm
+	- This material is based on 'Genetic Algorithm Tutorial - How to Code a Genetic Algorithm(https://youtu.be/XP8R0yzAbdo)' and 'Genetic Algorithms - Jeremy Fisher(https://youtu.be/7J-DfS52bnI, https://github.com/rawg/levis)'
+
+Genetic algorithms are a biologically inspired stochastic metaheuristic for combinatorial search and optimization
+-> Genetic algorithms are a biologically inspired fancy method of trial-and-error
+	
+
+# Application Area
+	- Operations Research
+	- Sociology
+	- Game Theory
+	- Economics
+	- Financial Trading
+	- Biology
+	- Engineering
+	- AI Design
+
+	
+# Terms in GA
+- Chromosome
+	Sequence of locus and allele
+- Locus
+	? Spaces filled by the Allele
+- Allele
+	? Values for locus
+- fitness
+	level of optimization
+	
+# Basis of model
+	1. a problem to solve
+	2. a fitness function
+		- What makes a given solution 'good'?
+	3. a way to represent solutions as 'DNA'
+	
+
+# Process of GA
+	1. Create a population of random 'chromosomes'(solutions)
+	2. Score each chromosome in the population for 'fitness'
+	3. Create a new generation through 'mutation' and 'crossover'
+	4. Repeat until done
+	5. Emit the fittest chromosome as the solution
+
+
+# Binalry encoding
+	[1,0,1,1,0] means the chromosome use A,C,D.
+	
+	
+#Selection
+
+	1. Proportionate selection
+	: Select the genes through the size of the impact
+
+	2. Tournament selection
+	: using part of population with the highest score
+
+	
+#Crossover
+
+	1. Single-point crossover
+	: For each chromosome, get only one part(sequence)
+	
+	2. Uniform crossover
+	: if you use chromosome A and B, then you get new chromosome [A,B,A,B,...]
+	  chromosome reach to the optimization point much faster with fewer iteration
+
+	  
+#Mutation
+: Get new chromosome except the exited population
+
+	1. Point mutation
+	: Randomly choose one point to change
+
+	
+# Measurement of preformance
+	- Solution fitness
+	- Clock time to converge
+	- Iterations to converge
+	- Number of solutions expored
+	- Inheritability
+	
+	
+# Define fitness function(18:00)
+When there are many requirements, it is hard to define fitness function because of many considerations
+	
